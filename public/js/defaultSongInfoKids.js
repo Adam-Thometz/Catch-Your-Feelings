@@ -2,7 +2,7 @@ const DEFAULT_SONG_INFO = {
   /** Sad */ 
   sad: {
     text: 'sad',
-    iconHTML: '<i class="fas fa-sad-tear fa-5x"></i>',
+    icon: 'sad-tear',
     uris: [
       '2yi7HZrBOC4bMUSTcs4VK6', // "Do You Wanna Build a Snowman", Frozen Soundtrack
       '6mb6lVLNrcUgLnEN8QnDJd', // "How Far I'll Go", Moana Soundtrack
@@ -12,7 +12,7 @@ const DEFAULT_SONG_INFO = {
   // 
   disappointed: {
     text: 'disappointed',
-    iconHTML: '<i class="fas fa-frown-open fa-5x"></i>',
+    icon: 'frown-open',
     uris: [
       '4GSttxZ8SfR0zXYUwI89mM', // "Start of Something New (piano version)", High School Musical Soundtrack
       '7wMPhUSe6CZga1vOMpLTJP', // "Beauty and the Beast" by Ariana Grande & John Legend
@@ -22,7 +22,7 @@ const DEFAULT_SONG_INFO = {
   /** Angry */
   angry: {
     text: 'angry',
-    iconHTML: '<i class="fas fa-angry fa-5x"></i>',
+    icon: 'angry',
     uris: [
       '7BrsBU0BAytRDvROM4yCbn', // "Thunder" by Imagine Dragons
       '3a6VoKrPpJKYuPFhk1Luyh', // "Everything About You is Special" by Venetian Snares
@@ -32,7 +32,7 @@ const DEFAULT_SONG_INFO = {
   /** Tired */
   tired: {
     text: 'tired',
-    iconHTML: '<i class="fas fa-tired fa-5x"></i>',
+    icon: 'tired',
     uris: [
       '2stkLJ0JNcXkIRDNF3ld6c', // "You've Got A Friend In Me", Toy Story Soundtrack
       '5QvhwJXtCD6rJRxzeY2h7j', // "The Bare Necesities (piano cover)" The Jungle Book Soundtrack
@@ -42,7 +42,7 @@ const DEFAULT_SONG_INFO = {
   /** Bored */
   bored: {
     text: 'bored',
-    iconHTML: '<i class="fas fa-meh-rolling-eyes fa-5x"></i>',
+    icon: 'meh-rolling-eyes',
     uris: [
       '6IQoOFscOOZqWTy6Hn6QnC', // "Sankai" by Meitei
       '3Z8FwOEN59mRMxDCtb8N0A', // "Be Kind" by Marshmello & Halsey
@@ -52,7 +52,7 @@ const DEFAULT_SONG_INFO = {
   /** Curious */
   curious: {
     text: 'curious',
-    iconHTML: '<i class="fas fa-surprise fa-5x"></i>',
+    icon: 'surprise',
     uris: [
       '2je07NBiHQZNoZRvTNB0AO', // "Tortise Playing Minecraft" by Parry Gripp
       '6pmuu4qSz2WrtGkBjUfyuz', // "Birdhouse In Your Soul" by They Might Be Giants
@@ -62,7 +62,7 @@ const DEFAULT_SONG_INFO = {
   /** Relaxed */
   relaxed: {
     text: 'relaxed',
-    iconHTML: '<i class="fas fa-grin fa-5x"></i>',
+    icon: 'grin',
     uris: [
       '4y16Yb42yI5FHCxIbg3jk0', // "Alphabutt" by Kimya Dawson
       '2FascIdnScQIoGNFrxwN9Y', // "Somewhere Over the Rainbow / What a Wonderful World" by Israel Kamakawiwo'ole
@@ -72,7 +72,7 @@ const DEFAULT_SONG_INFO = {
   /** Happy */ 
   happy: {
     text: 'happy',
-    iconHTML: '<i class="fas fa-smile-beam fa-5x"></i>',
+    icon: 'smile-beam',
     uris: [
     '0qxtQ8rf3W1nId3D2r0xH4', // "I Just Can't Wait to Be King", Lion King Soundtrack
     '3RNyGLgSvmVRZ7xKUp8Wgd', // "In the Summertime", Mungo Jerry
@@ -82,7 +82,7 @@ const DEFAULT_SONG_INFO = {
   /** Excited */
   excited: {
     text: 'excited',
-    iconHTML: '<i class="fas fa-laugh-squint fa-5x"></i>',
+    icon: 'laugh-squint',
     uris: [
       '571Jz87ytvwTv205mToeaG', // "Baby Shark"
       '5k5fWendNngd89O8JKoE8L', // "Better When I'm Dancin'" by Meghan Trainor

@@ -37,7 +37,7 @@ function catcher(e) {
   if (!checkValidSelect(valenceOptions, energyOptions)) {
     const errMessage = document.createElement('p')
     errMessage.classList.add('err-message')
-    errMessage.innerText = "We cannot pick a song for you until you pick something for both."
+    errMessage.innerText = "Look within - pick happiness - find energy."
     songWrapper.append(errMessage)
     return
   }
@@ -50,8 +50,8 @@ function catcher(e) {
   const songInfo = pickSong(valence, energy)
 
   // Generate the HTML needed to place the song on the catcher
-  const {text, iconHTML, uris} = songInfo
-  const html = generateHTML(text, iconHTML, uris)
+  const {text, icon, uris} = songInfo
+  const html = generateHTML(text, icon, uris)
   songWrapper.innerHTML = html
 }
 
@@ -98,13 +98,13 @@ function pickSong(valence, energy) {
   }
 }
 
-function generateHTML(text, iconHTML, uris){
+function generateHTML(text, icon, uris){
   // Get a random song from the uri list
   const uriIdx = Math.floor(Math.random() * uris.length)
   console.log(uriIdx)
   return `<h4>You most likely feel <span class="wrap" id="${text}">${text}</span></h4>
     <div class="wrapper" id=${text}>
-      ${iconHTML}
+      <i class="fas fa-${icon} fa-7x"></i>
     </div>
     <iframe src="https://open.spotify.com/embed/track/${uris[uriIdx]}" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>`
 }
