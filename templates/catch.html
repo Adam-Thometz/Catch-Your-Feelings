@@ -3,16 +3,16 @@
 <form action="">
   <label class="question" for="happyRating">Describe how happy you feel</label>
   <div class="wrapper happy-wrapper" name="happyRating" id="happyRating">
-    <div class="option" name="sad" id="sad"><i class="fas fa-frown fa-5x"></i></div>
-    <div class="option" name="meh" id="meh"><i class="fas fa-meh fa-5x"></i></div>
-    <div class="option" name="happy" id="happy"><i class="fas fa-smile fa-5x"></i></div>
+    <div class="wrapper icon-wrapper option" name="low-val" id="low-val"><i class="fas fa-frown fa-5x"></i></div>
+    <div class="wrapper icon-wrapper option" name="med-val" id="med-val"><i class="fas fa-meh fa-5x"></i></div>
+    <div class="wrapper icon-wrapper option" name="high-val" id="high-val"><i class="fas fa-smile fa-5x"></i></div>
   </div>
 
   <label class="question" for="energyRating">Describe your energy level</label>
   <div class="wrapper energy-wrapper" name="energyRating" id="energyRating">
-    <span class="option" name="low" id="low"><i class="fas fa-battery-empty fa-5x"></i></span>
-    <span class="option" name="medium" id="medium"><i class="fas fa-battery-half fa-5x"></i></span>
-    <span class="option" name="high" id="high"><i class="fas fa-battery-full fa-5x"></i></span>
+    <div class="wrapper icon-wrapper option" name="low-en" id="low-en"><i class="fas fa-battery-quarter fa-5x"></i></div>
+    <div class="wrapper icon-wrapper option" name="med-en" id="med-en"><i class="fas fa-battery-half fa-5x"></i></div>
+    <div class="wrapper icon-wrapper option" name="high-en" id="high-en"><i class="fas fa-battery-full fa-5x"></i></div>
   </div>
   <p id="energyStatus"></p>
 
@@ -24,5 +24,6 @@
 </div>
 {% endblock %}
 {% block script %}
+<script src="/js/defaultSongInfoKids.js"></script>
 <script src="/js/feelingCatcher.js"></script>
 {% endblock %}
