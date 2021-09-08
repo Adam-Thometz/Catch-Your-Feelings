@@ -29,11 +29,10 @@ th, td {
 }
 
 .about-research {
-  right: 0;
   width: 50%;
   padding: 20px;
   margin: 20px;
-  display: inline-block;
+  display: block;
   border: 5px solid rgb(192, 76, 192);
   border-radius: 20px;
   color: rgb(97, 15, 97);
@@ -97,10 +96,10 @@ li {
 
 .question {
   font-size: 1.5rem;
-  border: 2px solid rgb(202, 12, 202);
+  border: 1px solid rgba(112, 33, 112, 0.164);
   border-radius: 15px;
   padding: 20px;
-  background-color: rgba(209, 118, 255, 0.205);
+  left: 0;
 }
 
 .learn-more {
@@ -121,6 +120,15 @@ li {
   background-color: rgba(128, 0, 128, 0.322);
 }
 
+#findSong:hover {
+  cursor: pointer;
+}
+
+.err-message {
+  font-size: 1.5rem;
+  color: rgb(192, 148, 157);
+}
+
 .song-wrapper {
   color: rgb(209, 208, 208);
   display: flex;
@@ -132,7 +140,9 @@ li {
 }
 
 iframe {
-  border-radius: 30px;
-  padding: 5%;
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: auto;
+  margin: 10px auto;
   width: 90%;
 }

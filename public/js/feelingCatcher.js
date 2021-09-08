@@ -37,7 +37,7 @@ function catcher(e) {
   if (!checkValidSelect(valenceOptions, energyOptions)) {
     const errMessage = document.createElement('p')
     errMessage.classList.add('err-message')
-    errMessage.innerText = "Look within - pick happiness - find energy."
+    errMessage.innerText = "Please select your valence and energy."
     songWrapper.append(errMessage)
     return
   }
