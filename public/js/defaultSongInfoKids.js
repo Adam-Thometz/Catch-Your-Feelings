@@ -54,7 +54,7 @@ const DEFAULT_SONG_INFO = {
     text: 'curious',
     icon: 'surprise',
     uris: [
-      '2je07NBiHQZNoZRvTNB0AO', // "Tortise Playing Minecraft" by Parry Gripp
+      '2je07NBiHQZNoZRvTNB0AO', // "Tortoise Playing Minecraft" by Parry Gripp
       '6pmuu4qSz2WrtGkBjUfyuz', // "Birdhouse In Your Soul" by They Might Be Giants
       '15eWNa3kpCPKILbSvvzSWl'  // "Speed Me Up" by Wiz Khalifa
     ]
