@@ -1,3 +1,5 @@
+// This file is currently not active. This is the prototype for the full version
+
 const DEFAULT_SONG_INFO = {
   // Sad: "Yesterday" by The Beatles
   sad: {

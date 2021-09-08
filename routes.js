@@ -9,8 +9,8 @@ router.get("/", function(req, res, next) {
 
 /** The feelings catcher */
 
-router.get("/catch", function(req, res, next) {
-  return res.render("catch.html");
+router.get("/about", function(req, res, next) {
+  return res.render("about.html");
 });
 
 /** User routes */

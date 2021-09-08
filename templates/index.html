@@ -1,133 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Welcome to Catch Your Feelings!</h1>
+<h1>Time to Catch Your Feelings</h1>
+<form action="">
+  <label class="question" for="happyRating">Describe how happy you feel</label>
+  <div class="wrapper happy-wrapper" name="happyRating" id="happyRating">
+    <div class="wrapper icon-wrapper option" name="low-val" id="low-val"><i class="fas fa-frown fa-5x"></i></div>
+    <div class="wrapper icon-wrapper option" name="med-val" id="med-val"><i class="fas fa-meh fa-5x"></i></div>
+    <div class="wrapper icon-wrapper option" name="high-val" id="high-val"><i class="fas fa-smile fa-5x"></i></div>
+  </div>
 
-<h2>How it works</h2>
+  <label class="question" for="energyRating">Describe your energy level</label>
+  <div class="wrapper energy-wrapper" name="energyRating" id="energyRating">
+    <div class="wrapper icon-wrapper option" name="low-en" id="low-en"><i class="fas fa-battery-quarter fa-5x"></i></div>
+    <div class="wrapper icon-wrapper option" name="med-en" id="med-en"><i class="fas fa-battery-half fa-5x"></i></div>
+    <div class="wrapper icon-wrapper option" name="high-en" id="high-en"><i class="fas fa-battery-full fa-5x"></i></div>
+  </div>
+  <p id="energyStatus"></p>
 
-<p>Emotions can be broken down into two parts</p>
+  <button type="submit" id="findSong">Find the right song!</button>
+</form>
 
-<div class="emotion-explanation">
-<table>
-  <thead>
-    <th>Low valence</th>
-    <th>Mid valence</th>
-    <th>High valence</th>
-  </thead>
-  <tbody>
-    <td class="icon-wrapper"><i class="fas fa-frown fa-5x" id="low-val"></i></td>
-    <td class="icon-wrapper"><i class="fas fa-meh fa-5x" id="med-val"></i></td>
-    <td class="icon-wrapper"><i class="fas fa-smile fa-5x" id="high-val"></i></td>
-  </tbody>
-</table>
-<p><b>Valence:</b> how <em>pleasent</em> an emotion is</p>
+<a href="/about" class="learn-more">Learn more about Catch Your Feelings</a>
+
+<div class="wrapper song-wrapper">
+
 </div>
-<div class="emotion-explanation">
-  <table>
-    <thead>
-      <th>Low energy</th>
-      <th>Mid energy</th>
-      <th>High energy</th>
-    </thead>
-    <tbody>
-      <td class="icon-wrapper"><i class="fas fa-battery-quarter fa-5x" id="low-en"></i></td>
-
-      <td class="icon-wrapper"><i class="fas fa-battery-half fa-5x" id="med-en"></i></td>
-
-      <td class="icon-wrapper"><i class="fas fa-battery-full fa-5x" id="high-en"></i></td>
-    </tbody>
-  </table>
-  <p><b>Energy:</b> how <em>strong</em> an emotion is</p>
-</div>
-
-
-<h2>Examples</h2>
-<div class="example">
-  <table>
-    <thead>
-      <th>High valence</th>
-      <th></th>
-      <th>High energy</th>
-      <th></th>
-      <th>Excited</th>
-    </thead>
-    <tbody>
-      <td class="icon-wrapper"><i class="fas fa-smile fa-5x" id="high-val"></i></td>
-      <td><i class="fas fa-plus fa-3x"></i></td>
-      <td class="icon-wrapper"><i class="fas fa-battery-full fa-5x" id="high-en"></i></td>
-      <td><i class="fas fa-equals fa-3x"></i></i></td>
-      <td class="icon-wrapper"><i class="fas fa-laugh-squint fa-5x" id="excited"></i></td>
-    </tbody>
-  </table>
-</div>
-
-<div class="example">
-  <table>
-    <thead>
-      <th>Low valence</th>
-      <th></th>
-      <th>Low energy</th>
-      <th></th>
-      <th>Sad</th>
-    </thead>
-    <tbody>
-      <td class="icon-wrapper"><i class="fas fa-frown fa-5x" id="low-val"></i></td>
-      <td><i class="fas fa-plus fa-3x"></i></td>
-      <td class="icon-wrapper"><i class="fas fa-battery-quarter fa-5x" id="low-en"></i> </td>
-      <td><i class="fas fa-equals fa-3x"></i></i></td>
-      <td class="icon-wrapper"><i class="fas fa-sad-tear fa-5x" id="sad"></i></td>
-    </tbody>
-  </table>
-</div>
-
-<div class="example">
-  <table>
-    <thead>
-      <th>High valence</th>
-      <th></th>
-      <th>Low energy</th>
-      <th></th>
-      <th>Relaxed</th>
-    </thead>
-    <tbody>
-      <td class="icon-wrapper"><i class="fas fa-smile fa-5x" id="high-val"></i></td>
-      <td><i class="fas fa-plus fa-3x"></i></td>
-      <td class="icon-wrapper"><i class="fas fa-battery-quarter fa-5x" id="low-en"></i></td>
-      <td><i class="fas fa-equals fa-3x"></i></i></td>
-      <td class="icon-wrapper"><i class="fas fa-grin fa-5x" id="relaxed"></i></td>
-    </tbody>
-  </table>
-</div>
-
-<div class="example">
-  <p>Food for thought: What do you think low valence and high energy means?</p>
-  <table>
-    <thead>
-      <th>Low valence</th>
-      <th></th>
-      <th>High energy</th>
-      <th></th>
-      <th>???</th>
-    </thead>
-    <tbody>
-      <td class="icon-wrapper"><i class="fas fa-frown fa-5x" id="low-val"></i></td>
-      <td><i class="fas fa-plus fa-3x"></i></td>
-      <td class="icon-wrapper"><i class="fas fa-battery-full fa-5x" id="high-en"></i></td>
-      <td><i class="fas fa-equals fa-3x"></i></i></td>
-      <td class="icon-wrapper"><i class="fas fa-question fa-5x" id="question"></i></td>
-    </tbody>
-  </table>
-</div>
-
-
-<p class="explanation">All you need to do is pay attention to your valence and energy.</p>
-
-<a class="catch-link" href="/catch">Try the feeling catcher!</a>
-
-<aside class="about-research">
-  <h4>Is this a research-based approach?</h4>
-
-  <p>Yes! The approach used here is based on <a href="https://www.ycei.org/ruler">the RULER method</a>, developed by researchers at the Yale Center for Emotional Intelligence</p>
-  <p>This approach is being adopted in school districts across the US as part of a push to teach emotional intelligence.</p>
-  <p>This is also known as a <a href="https://heartmindonline.org/resources/boost-emotional-intelligence-with-the-mood-meter">mood meter</a> approach.</p>
-</aside>
+{% endblock %}
+{% block script %}
+<script src="/js/defaultSongInfoKids.js"></script>
+<script src="/js/feelingCatcher.js"></script>
 {% endblock %}
