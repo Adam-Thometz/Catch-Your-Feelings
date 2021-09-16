@@ -1,23 +1,22 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Time to Catch Your Feelings</h1>
-<form action="">
-  <label class="question" for="happyRating">Describe how happy you feel</label>
-  <div class="wrapper happy-wrapper" name="happyRating" id="happyRating">
-    <div class="wrapper icon-wrapper option" name="low-val" id="low-val"><i class="fas fa-frown fa-5x"></i></div>
-    <div class="wrapper icon-wrapper option" name="med-val" id="med-val"><i class="fas fa-meh fa-5x"></i></div>
-    <div class="wrapper icon-wrapper option" name="high-val" id="high-val"><i class="fas fa-smile fa-5x"></i></div>
-  </div>
 
-  <label class="question" for="energyRating">Describe your energy level</label>
-  <div class="wrapper energy-wrapper" name="energyRating" id="energyRating">
-    <div class="wrapper icon-wrapper option" name="low-en" id="low-en"><i class="fas fa-battery-quarter fa-5x"></i></div>
-    <div class="wrapper icon-wrapper option" name="med-en" id="med-en"><i class="fas fa-battery-half fa-5x"></i></div>
-    <div class="wrapper icon-wrapper option" name="high-en" id="high-en"><i class="fas fa-battery-full fa-5x"></i></div>
-  </div>
+<label class="question happy" for="happyRating">Describe how happy you feel</label>
+<div class="wrapper happy-wrapper" name="happyRating" id="happyRating">
+  <div class="wrapper icon-wrapper option" data-level="low"  id="low-val"><i class="fas fa-frown fa-5x"></i></div>
+  <div class="wrapper icon-wrapper option" data-level="medium" id="med-val"><i class="fas fa-meh fa-5x"></i></div>
+  <div class="wrapper icon-wrapper option" data-level="high"  id="high-val"><i class="fas fa-smile fa-5x"></i></div>
+</div>
 
-  <button type="submit" id="findSong">Find the right song!</button>
-</form>
+<label class="question energy" for="energyRating">Describe your energy level</label>
+<div class="wrapper energy-wrapper" name="energyRating" id="energyRating">
+  <div class="wrapper icon-wrapper option" data-level="low" id="low-en"><i class="fas fa-battery-quarter fa-5x"></i></div>
+  <div class="wrapper icon-wrapper option" data-level="medium" id="med-en"><i class="fas fa-battery-half fa-5x"></i></div>
+  <div class="wrapper icon-wrapper option" data-level="high" id="high-en"><i class="fas fa-battery-full fa-5x"></i></div>
+</div>
+
+<button id="findSong">Find the right song!</button>
 
 <a href="/about" class="learn-more">How does this work?</a>
 

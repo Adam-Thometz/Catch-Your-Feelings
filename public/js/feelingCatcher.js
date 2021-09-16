@@ -1,5 +1,9 @@
 const happyWrapper = document.querySelector('.happy-wrapper')
+const happyQuestion = document.querySelector('.happy')
+
 const energyWrapper = document.querySelector('.energy-wrapper')
+const energyQuestion = document.querySelector('.energy')
+
 const songWrapper = document.querySelector('.song-wrapper')
 const findSong = document.getElementById('findSong')
 const errMessage = document.getElementById('errMessage')
@@ -22,8 +26,15 @@ function select(e) {
     }
   }
 
-  // mark the target element as selected
+  // mark the target element as selected and change question text to reflect choice.
   choice.classList.add('selected')
+  if (choice.parentElement.classList.contains('happy-wrapper')) {
+    happyQuestion.innerHTML = `Your happiness level is: <b>${choice.dataset.level}</b>`
+  }
+  if (choice.parentElement.classList.contains('energy-wrapper')) {
+    energyQuestion.innerHTML = `Your energy level is: <b>${choice.dataset.level}</b>`
+  }
+
 }
 
 function catcher(e) {
@@ -31,13 +42,13 @@ function catcher(e) {
   songWrapper.innerHTML = ''
 
   // Check to see if an option was selected for both. User can proceed only if both fields are picked
-  const valenceOptions = e.path[1].children[1].children
-  const energyOptions = e.path[1].children[3].children
+  const valenceOptions = e.path[1].children[2].children
+  const energyOptions = e.path[1].children[4].children
   
   if (!checkValidSelect(valenceOptions, energyOptions)) {
     const errMessage = document.createElement('p')
     errMessage.classList.add('err-message')
-    errMessage.innerText = "Please select your valence and energy."
+    errMessage.innerText = "Please select your happiness and energy."
     songWrapper.append(errMessage)
     return
   }

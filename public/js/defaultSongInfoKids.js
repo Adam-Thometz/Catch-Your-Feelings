@@ -9,7 +9,7 @@ const DEFAULT_SONG_INFO = {
       '3BQHpFgAp4l80e1XslIjNI'  // "Yesterday" by The Beatles
     ]
   },
-  // 
+  /** Disappointed */
   disappointed: {
     text: 'disappointed',
     icon: 'frown-open',
