@@ -11,12 +11,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap" rel="stylesheet">
   <!-- CSS stylesheets -->
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-  <link rel="stylesheet" href="/css/icons.css" type="text/css">
+  <link rel="stylesheet" href="static/css/style.css" type="text/css">
+  <link rel="stylesheet" href="static/css/icons.css" type="text/css">
   <title>Catch Your Feelings</title>
 </head>
 <body>
-  <div id="content" style="margin-top: 80px">
+  <nav>
+    <span>Catch Your Feelings</span>
+    {% if g.user %}
+    <div class="user-options">
+      <a href="/profile">My Profile</a>
+      <a href="/library">My Library</a>
+      <a href="/feelings">My Feelings</a>
+      <form action="/logout" method="POST">
+        <button>Logout</button>
+      </form>
+    </div>
+    {% else %}
+    <div class="login-register">
+      <a href="/login">Login</a>
+      <a href="/register">Register</a>
+    </div>
+    {% endif %}
+  </nav>
+  <div id="content">
+    {% for category, message in get_flashed_messages(with_categories=True) %}
+    <div class="{{category}}">{{message}}</div>
+    {% endfor %}
+
     {% block content %}{% endblock %}
   </div>
 </body>

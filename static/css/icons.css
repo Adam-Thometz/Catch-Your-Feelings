@@ -1,0 +1,117 @@
+/* Stylesheet for icons with icon tags provided for reference. Icons by FontAwesome v5.15 */
+
+/************************************/
+/* Default valence and energy icons */
+/************************************/
+
+/* Valence icons
+low: <i class="fas fa-frown fa-5x"></i>
+medium: <i class="fas fa-meh fa-5x"></i>
+high: <i class="fas fa-smile fa-5x"></i>
+*/
+#high-val {
+  color: rgb(202, 202, 0);
+}
+
+#med-val {
+  color: rgb(11, 158, 11);
+}
+
+#low-val {
+  color: rgb(58, 58, 245);
+}
+
+/* Energy icons 
+low: <i class="fas fa-battery-quarter fa-5x"></i>
+medium: <i class="fas fa-battery-half fa-5x"></i>
+high: <i class="fas fa-battery-full fa-5x"></i> 
+*/
+#low-en {
+  color: rgb(219, 23, 23);
+}
+
+#med-en {
+  color: rgb(202, 202, 0);
+}
+
+#high-en {
+  color: rgb(1, 156, 1);
+}
+
+/*****************/
+/* Emotion icons */
+/*****************/
+
+/**** Low valence, low to high energy ****/
+
+/* Sad
+<i class="fas fa-sad-tear"></i> */
+#sad {
+  color: rgb(61, 61, 202);
+}
+
+/* Disappointed
+<i class="fas fa-frown-open"></i> */
+#disappointed {
+  color: rgb(188, 12, 204);
+}
+
+/* Angry
+<i class="fas fa-angry"></i> */
+#angry {
+  color: rgb(221, 0, 0);
+}
+/**** Medium valence, low to high energy ****/
+
+/* Tired
+<i class="fas fa-tired"></i> */
+#tired {
+  color: rgb(39, 190, 190);
+}
+
+/* Bored
+<i class="fas fa-meh-rolling-eyes"></i> */
+#bored {
+  color: grey;
+}
+
+/* Curious
+<i class="fas fa-surprise"></i> */
+#curious {
+  color: rgb(214, 139, 0);
+}
+
+/**** High valence, low to high energy ****/
+
+/* Relaxed
+<i class="fas fa-grin"></i> */
+#relaxed {
+  color: rgb(1, 155, 1);
+}
+
+/* Happy
+<i class="fas fa-smile-beam"></i> */
+#happy {
+  color: yellowgreen;
+}
+
+/* Excited
+<i class="fas fa-laugh-squint"></i> */
+#excited {
+  color: rgb(248, 248, 172);
+}
+
+/********/
+/* Misc */
+/********/
+
+/* Question mark
+<i class="fas fa-question fa-5x"></i> */
+#question {
+  color: rgb(204, 80, 142);
+}
+
+/* Icon wrapper */
+.wrap {
+  color: rgb(53, 47, 47);
+}
